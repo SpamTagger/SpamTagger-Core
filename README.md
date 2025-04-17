@@ -6,7 +6,7 @@ This repository is currently a placeholder for future development of SpamTagger.
 
 SpamTagger will be hard fork of MailCleaner®, by it's former head developer, which will seek to provide a very slimmed-down, easy to maintain alternative which is appropriate for use by individual nerds, SMBs with a nerd on staff, or integration into more complex environments.
 
-While SpamTagger is in development, [SpamTagger Plus](https://github.com/SpamTagger/SpamTagger-Plus) is being maintained as a direct continuation of MailCleaner® Community Edition. If you wish to use a solution which is directly compatible with MailCleaner, you can check that out instead.
+While SpamTagger is in development, maintainence will be continued for MailCleaner® Community Edition. It is uncleare at the moment whether this will be possible within the existing [MailCleaner](https://github.com/MailCleaner/MailCleaner8) repository. In case this ends up not being possible a fork within this organization called [SpamTagger Plus](https://github.com/SpamTagger/SpamTagger-Plus) will be used as a direct continuation.
 
 Until SpamTagger has an independent legacy, it will be best understood by contrast to it's predecessor. Specifically, it aims to maintain all of the filtering features of MailCleaner®, while dropping much of the fat.
 
@@ -61,7 +61,7 @@ With no more need for a WebUI and no more tracking of quarantined content, there
 
 ### Why do SpamTagger and SpamTagger Plus even exist?
 
-Future development of MailCleaner® has been discontinued. SpamTagger Plus seeks to extend the life of MailCleaner® appliances for users who want as much stability as possible. However, given the complexity of the additional features discussed above, it is unrealistic to continue developing it beyond basic maintainance without substantially more resources.
+Future development of MailCleaner® has been discontinued. SpamTagger Plus will seek to extend the life of MailCleaner® appliances for users who want as much stability as possible. However, given the complexity of the additional features discussed above, it is unrealistic to continue developing it beyond basic maintainance without substantially more resources.
 
 The goal of SpamTagger is to have an alternative which can not only be maintained, but also see continual development with many fewer resources. It is intended to be simple and lightweight enough that work can be sufficiently done by one person on a part-time basis.
 
@@ -75,14 +75,14 @@ Please DO NOT contact MailCleaner®/Alinto with questions or concerns related to
 
 ### Should I migrate from MailCleaner®?
 
-SpamTagger does not yet exist in any usable form, so you cannot migrate to it. However, it will not be a bad idea to re-base any existing MailCleaner® appliance to SpamTagger Plus as soon as migration instructions are available.
+SpamTagger does not yet exist in any usable form, so you cannot migrate to it. If it ends up being necessary to migrate any existing MailCleaner® appliance to the SpamTagger Plus repository, then instructions will be made available.
 
 If you pay for Enterprise Edition then you definitely should not migrate until your contract ends since it provides some premium data feeds which cannot be made availabe for SpamTagger Plus. However, SpamTagger Plus will share all of the same features available in MailCleaner® Community Edition.
 
 If you would like e-mail filtering provided as a cloud service and are an existing MailCleaner® Cloud customer, you should consider using Alinto's [Cleanmail](https://www.alinto.com/email-security-relay-cleanmail) product.
 
-If you don't currently use MailCleaner and would like to self-host your anti-spam gateway, you can start using [SpamTagger Plus](https://github.com/SpamTagger/SpamTagger-Plus) while SpamTagger is in development.
-
+<!--If you don't currently use MailCleaner and would like to self-host your anti-spam gateway, you can start using [SpamTagger Plus](https://github.com/SpamTagger/SpamTagger-Plus) while SpamTagger is in development.
+-->
 If you would like to try a different self-hosted mail filtering solution which is even more light-weight and even more DIY than SpamTagger aims to be, you should check out [Mailmunge](https://www.mailmunge.org). This is a Milter-based tool which does not require a separate relay and which provides complete scripting freedom with Perl.
 
 ## Contributing
