@@ -6,11 +6,11 @@ This repository is currently a placeholder for future development of SpamTagger.
 
 SpamTagger will be hard fork of MailCleaner®, by it's former head developer, which will seek to provide a very slimmed-down, easy to maintain alternative which is appropriate for use by individual nerds, SMBs with a nerd on staff, or integration into more complex environments.
 
-While SpamTagger is in development, maintainence will be continued for MailCleaner® Community Edition. It is uncleare at the moment whether this will be possible within the existing [MailCleaner](https://github.com/MailCleaner/MailCleaner8) repository. In case this ends up not being possible a fork within this organization called [SpamTagger Plus](https://github.com/SpamTagger/SpamTagger-Plus) will be used as a direct continuation.
+While SpamTagger is in development, a direct continuation of MailCleaner® Community Edition will continue to be maintained with the [SpamTagger Plus](https://github.com/SpamTagger/SpamTagger-Plus) project.
 
-Until SpamTagger has an independent legacy, it will be best understood by contrast to it's predecessor. Specifically, it aims to maintain all of the filtering features of MailCleaner®, while dropping much of the fat.
+Until SpamTagger has an independent legacy, it will be best understood by contrasting it to MailCleaner®/SpamTagger Plus. Specifically, it aims to maintain all of the filtering features while dropping much of the fat.
 
-| Feature                               | SpamTagger | MailCleaner® |
+| Feature                               | SpamTagger | MailCleaner®/SpamTagger Plus |
 | :---                                  | :---:      | :---:        |
 | Exim MTA                              | ✅         | ✅           |
 | MailScanner Filtering Engine          | ✅         | ✅           |
@@ -18,6 +18,7 @@ Until SpamTagger has an independent legacy, it will be best understood by contra
 | Clam Anti-Virus                       | ✅         | ✅           |
 | NiceBayes Statistical Analysis Filter | ✅         | ✅           |
 | Spam Cache Filter                     | ✅         | ✅           |
+| Tesseract OCR                         | ✅         | ✅           |
 | Web UI for configuration              | ⛔         | ✅           |
 | Per-User Quarantines                  | ⛔         | ✅           |
 | MariaDB Configuration Database        | ⛔         | ✅           |
@@ -25,7 +26,6 @@ Until SpamTagger has an independent legacy, it will be best understood by contra
 | TOML Configuration Files              | ✅         | ⛔           |
 | Comprehensive Configuration API       | ✅         | ⛔           |
 | Automatic Service Restart             | ✅         | ⛔           |
-| Tesseract OCR                         | ✅         | ⛔           |
 
 There will be several significant difference between MailCleaner® and SpamTagger:
 
@@ -43,7 +43,7 @@ There will be several significant difference between MailCleaner® and SpamTagge
 
 * **SpamTagger will aim to be more modern and flexible to deploy.** While this may take a while to come along, the goal will be to have a build system which can make reproducable VM images, installable ISO images, and Docker container images. Furthermore, it should be possible to provide images for different architectures, such as for the Raspberry Pi and other SBCs.
 
-* **SpamTagger will have a comprehensive configuration API.** This will seek to allow all settings to be readable and writable externally so that other projects can seek to add other user interfaces back to SpamTagger if they wish. Specifically, it will be desirable to allow for plugins which can make SpamTagger configurable in tools like NextCloud, Plesk, CPanel and other similar hosting and domain management interfaces.
+* **SpamTagger will have a comprehensive configuration API.** This will seek to allow all settings to be readable and writable externally so that other projects can seek to add user interfaces back to SpamTagger if they wish. Specifically, it will be desirable to allow for plugins which can make SpamTagger configurable in tools like NextCloud, Plesk, CPanel and other similar hosting and domain management interfaces.
 
 * Since SpamTagger will be the project that is being actively maintained, **it will continue to see investment in new features, focusing on filtering quality over all else.** To begin with, TesseractOCR integration should be provided from the beginning.
 
@@ -61,15 +61,15 @@ With no more need for a WebUI and no more tracking of quarantined content, there
 
 ### Why do SpamTagger and SpamTagger Plus even exist?
 
-Future development of MailCleaner® has been discontinued. SpamTagger Plus will seek to extend the life of MailCleaner® appliances for users who want as much stability as possible. However, given the complexity of the additional features discussed above, it is unrealistic to continue developing it beyond basic maintainance without substantially more resources.
+Future development of MailCleaner® has been discontinued. SpamTagger Plus will seek to provide a nearly idential experience for users who are used to MailCleaner® with a focus on stability and maintainability. However, given the complexity of the additional features discussed above, it is unrealistic to continue developing new features without substantially more resources.
 
-The goal of SpamTagger is to have an alternative which can not only be maintained, but also see continual development with many fewer resources. It is intended to be simple and lightweight enough that work can be sufficiently done by one person on a part-time basis.
+The goal of SpamTagger is to have an alternative which can not only be maintained, but also see continual development with many fewer resources. It is intended to be simple and lightweight enough that work can be sufficiently done by one person on a part-time basis, in the worst-case scenario.
 
 ### Is SpamTagger affiliated with MailCleaner®/Alinto?
 
 No.
 
-SpamTagger is a project which is being lead by the former head of development for MailCleaner® without any direction from MailClenaer®/Alinto. It inherits much of it's code from MailCleaner® by virtue of MailCleaner® being an open source project. SpamTagger Plus will seek to continue to be directly compatible with upstream MailCleaner® if it continues to see any development, but SpamTagger will not be compatible except with the possibility to make a one-time, irreversable migration.
+SpamTagger is a project which is being lead by the former head of development for MailCleaner® without any direction from MailClenaer®/Alinto. It inherits much of it's code from MailCleaner® by virtue of MailCleaner® being an open source project. SpamTagger Plus will seek to continue to be directly compatible with upstream MailCleaner®, but SpamTagger will not be compatible except with the possibility to make a one-time, irreversable migration.
 
 Please DO NOT contact MailCleaner®/Alinto with questions or concerns related to SpamTagger.
 
@@ -79,9 +79,8 @@ SpamTagger does not yet exist in any usable form, so you cannot migrate to it. I
 
 If you pay for Enterprise Edition then you definitely should not migrate until your contract ends since it provides some premium data feeds which cannot be made availabe for SpamTagger Plus. However, SpamTagger Plus will share all of the same features available in MailCleaner® Community Edition.
 
-If you would like e-mail filtering provided as a cloud service and are an existing MailCleaner® Cloud customer, you should consider using Alinto's [Cleanmail](https://www.alinto.com/email-security-relay-cleanmail) product.
-
 <!--If you don't currently use MailCleaner and would like to self-host your anti-spam gateway, you can start using [SpamTagger Plus](https://github.com/SpamTagger/SpamTagger-Plus) while SpamTagger is in development.
+
 -->
 If you would like to try a different self-hosted mail filtering solution which is even more light-weight and even more DIY than SpamTagger aims to be, you should check out [Mailmunge](https://www.mailmunge.org). This is a Milter-based tool which does not require a separate relay and which provides complete scripting freedom with Perl.
 
