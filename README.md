@@ -19,13 +19,10 @@ Until SpamTagger has an independent legacy, it will be best understood by contra
 | NiceBayes Statistical Analysis Filter | ✅         | ✅           |
 | Spam Cache Filter                     | ✅         | ✅           |
 | Tesseract OCR                         | ✅         | ✅           |
-| Web UI for configuration              | ⛔         | ✅           |
-| Per-User Quarantines                  | ⛔         | ✅           |
-| MariaDB Configuration Database        | ⛔         | ✅           |
-| Advanced TUI Wizard                   | ✅         | ⛔           |
-| TOML Configuration Files              | ✅         | ⛔           |
-| Comprehensive Configuration API       | ✅         | ⛔           |
-| Automatic Service Restart             | ✅         | ⛔           |
+| Spam Storage Location                 | User's "Junk" folder | Quarantined on the filtering appliance |
+| Configuration of user and settings    | Via API or CLI wizard  | Via WebUI |
+| Configuration Storage                 | Version controlled TOML files | MariaDB database |
+| Development Cadence/Focus             | Faster/more active development | Slower/more stable development |
 
 There will be several significant difference between MailCleaner® and SpamTagger:
 
