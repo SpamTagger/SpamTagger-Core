@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/SpamTagger/SpamTagger/refs/heads/main/spamtagger-core.svg" alt="SpamTagger Core Logo" style="height:2em; vertical-align:middle;"> SpamTagger Core
+# <img src="https://raw.githubusercontent.com/SpamTagger/SpamTagger-Core/refs/heads/main/spamtagger-core.svg" alt="SpamTagger Core Logo" style="height:2em; vertical-align:middle;"> SpamTagger Core
 
 This repository is currently a placeholder for future development of SpamTagger Core.
 
